@@ -6,10 +6,16 @@ import helmet from "helmet";
 // Database Connection
 import ConnectDB from "./database/connection";
 
+// API
+import Auth from "./API/Auth";
+
 const zomato = express();
 zomato.use(cors());
 zomato.use(express.json());
 zomato.use(helmet());
+
+// Application Routes
+zomato.use("/auth", Auth);
 
 zomato.listen(4000, () => {
   ConnectDB()

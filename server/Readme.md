@@ -16,3 +16,7 @@ Hashing and Salting
 you enter a password = 123456
 first step is Hashing; sdfasd324sdsdvask34h423*&^*743jdngjkk3457i
 second step is Salting(10); sdfasd324sdsdvask34h423*&^*743jdngjkk3457i$%^&\*(
+
+## Tasks
+
+1. Create required validation for rest of the routes.

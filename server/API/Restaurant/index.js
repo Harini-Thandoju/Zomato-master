@@ -4,6 +4,13 @@ import express from "express";
 // Database modal
 import { RestaurantModel } from "../../database/allModels";
 
+// Validation
+import {
+  ValidateRestaurantCity,
+  ValidateRestaurantSearchString,
+} from "../../validation/restaurant";
+import { validateId } from "../../validation/common";
+
 const Router = express.Router();
 
 /**
@@ -15,6 +22,7 @@ const Router = express.Router();
  */
 Router.get("/", async (req, res) => {
   try {
+    await ValidateRestaurantCity(req.query);
     // http://localhost:4000/restaurant/?city=ncr
     const { city } = req.query;
     const restaurants = await RestaurantModel.find({ city });
@@ -37,6 +45,7 @@ Router.get("/", async (req, res) => {
 // http://localhost:4000/restaurant/12454dsfdofi438532
 Router.get("/:_id", async (req, res) => {
   try {
+    await validateId(req.params);
     const { _id } = req.params;
     const restaurant = await RestaurantModel.findById(_id);
 
@@ -67,6 +76,7 @@ Router.get("/search/:searchString", async (req, res) => {
    * }
    */
   try {
+    await ValidateRestaurantSearchString(req.params);
     const { searchString } = req.params;
     const restaurants = await RestaurantModel.find({
       name: { $regex: searchString, $options: "i" },

@@ -41,7 +41,7 @@ function RestaurantLayout({ children }) {
           address={restaurant?.address}
         />
         <div className="my-4 flex flex-wrap gap-3 mx-auto">
-          <InfoButton isActive>
+          <InfoButton isActive={true}>
             <TiStarOutline /> Add Review
           </InfoButton>
           <InfoButton>

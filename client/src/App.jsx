@@ -11,6 +11,7 @@ import RestaurantLayoutHoc from "./HOC/Restaurant.hoc";
 import HomePage from "./pages/HomePage";
 import RestaurantPage from "./pages/RestaurantPage";
 import Overview from "./components/Restaurant/Overview";
+import OrderOnline from "./components/Restaurant/OrderOnline";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
       <RestaurantLayoutHoc
         path="/restaurant/:id/order-online"
         exact
-        component={HomePage}
+        component={OrderOnline}
       />
       <RestaurantLayoutHoc
         path="/restaurant/:id/reviews"

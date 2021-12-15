@@ -22,7 +22,7 @@ const Router = express.Router();
  */
 Router.get("/", async (req, res) => {
   try {
-    await ValidateRestaurantCity(req.query);
+    // await ValidateRestaurantCity(req.query);
     // http://localhost:4000/restaurant/?city=ncr
     const { city } = req.query;
     const restaurants = await RestaurantModel.find({ city });

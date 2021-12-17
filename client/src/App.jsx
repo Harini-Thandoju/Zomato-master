@@ -27,11 +27,7 @@ function App() {
         <Redirect to="/delivery" />
       </Route>
       <HomeLayoutHoc path="/:type" exact component={HomePage} />
-      <RestaurantLayoutHoc
-        path="/restaurant/:id"
-        exact
-        component={RestaurantPage}
-      />
+      <RestaurantLayoutHoc path="/restaurant/:id" exact component={Redirect} />
       <RestaurantLayoutHoc
         path="/restaurant/:id/overview"
         exact

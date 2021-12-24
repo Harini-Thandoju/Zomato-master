@@ -68,3 +68,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Database Model
+
+Restaurant
+"name": "",
+"city": "",
+"address": "",
+"mapLocation": "",
+"cuisine": ["", ""],
+"restaurantTimings": "",
+"contactNumber": "",
+"website": "",
+"popularDishes": ["", ""],
+"averageCost": 300,
+"amenties": ["", ""],
+"menuImages": referencing => Images Collecion document,
+"menu": references => Menu Collection document,
+,
+"reviews": ["references => Reviews Collection document", "references => Reviews Collection document"],
+"photos": references => Images Collection document
+
+Menus
+menus: [
+{
+name: "",
+items: [
+references => Food Collection document,
+]
+}
+],
+"recommended": [
+"references => Food Collection document"
+]

@@ -17,8 +17,43 @@ import ReviewCard from "./Reviews/ReviewCard";
 import MapView from "./MapView";
 
 function Overview() {
-  const [menuImages, setMenuImages] = useState({ images: [] });
-  const [reviews, setReviews] = useState([]);
+  const [menuImages, setMenuImages] = useState({ images: [
+    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+  ] });
+  const [reviews, setReviews] = useState([
+{
+  isRestaurantReview: false,
+  createAt:"2020-05-01",
+  fullName: "john Doe",
+  reviewText: "Food was good, but servuce was slow",
+},
+{
+  isRestaurantReview: false,
+  createAt:"2020-05-01",
+  fullName: "john Doe",
+  reviewText: "Food was good, but servuce was slow",
+},
+{
+  isRestaurantReview: false,
+  createAt:"2020-05-01",
+  fullName: "john Doe",
+  reviewText: "Food was good, but servuce was slow",
+},
+{
+  isRestaurantReview: false,
+  createAt:"2020-05-01",
+  fullName: "john Doe",
+  reviewText: "Food was good, but servuce was slow",
+},
+{
+  isRestaurantReview: false,
+  createAt:"2020-05-01",
+  fullName: "john Doe",
+  reviewText: "Food was good, but servuce was slow",
+},
+  ]);
   const { id } = useParams();
 
   const reduxState = useSelector(
@@ -89,8 +124,8 @@ function Overview() {
           <div className="flex flex-wrap gap-3 my-4">
             <MenuCollection
               menuTitle="Menu"
-              pages={menuImages.length}
-              image={menuImages}
+              pages="3"
+              image={menuImages.images}
             />
           </div>
           <h4 className="text-lg font-medium my-4">Cuisines</h4>
@@ -174,7 +209,7 @@ function Overview() {
         >
           <MapView
             title="McDonald's"
-            phno="+919234345634"
+            phno="+917670990924"
             mapLocation={getLatLong("28.64435706075414, 77.11929960209767")}
             address="Shop 52, Plot 8, 9 & 10, G-8, Ground Floor, DDA Market, J-Block, Community Centre, Rajouri Garden, New Delhi"
           />

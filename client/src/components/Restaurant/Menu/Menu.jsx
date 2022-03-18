@@ -9,7 +9,11 @@ import MenuCollection from "../MenuCollection";
 
 function Menu() {
   const dispatch = useDispatch();
-  const [menus, setMenu] = useState([]);
+  const [menus, setMenu] = useState([
+    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+  ]);
   const reduxState = useSelector(
     (globalState) => globalState.restaurant.selectedRestaurant.restaurant
   );

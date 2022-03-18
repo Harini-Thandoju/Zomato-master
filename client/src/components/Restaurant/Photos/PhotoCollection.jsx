@@ -7,6 +7,10 @@ function PhotoCollection(props) {
   };
 
   return (
+
+
+
+    
     <>
       <div className=" flex flex-col" onClick={() => openImage()}>
         <div className="w-full h-full overflow-hidden rounded-lg">

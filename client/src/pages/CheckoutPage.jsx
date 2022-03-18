@@ -26,7 +26,24 @@ function CheckoutPage() {
       address: "123 Main St",
     },
   ];
-
+  const foods=[
+    {
+      image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
+      name:"chilli panner gravy",
+      price:"157.50",
+      rating:4,
+      descript:"chicken Noodeles + Chilli Chiken + Manchurian",
+      quantity: 1,
+    },
+    {
+      image:"https://recipesofhome.com/wp-content/uploads/2020/02/chilli-paneer-recipe.jpg",
+      name:"chilli panner gravy",
+      price:"157.50",
+      rating:4,
+      descript:"chicken Noodeles + Chilli Chiken + Manchurian",
+      quantity: 3,
+    },
+  ];
   const reduxStateCart = useSelector((globalState) => globalState.cart.cart);
   const reduxStateUser = useSelector(
     (globalState) => globalState.user.user.user

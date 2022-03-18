@@ -3,7 +3,7 @@ import axios from "axios";
 // Redux types
 import { GET_RESTAURANT, GET_SPECIFIC_RESTAURANT } from "./restaurant.type";
 
-export const getRestaurant = () => async (dispatch) => {
+export const getRestaurant = () => async (dispatch) => {//dispatch is middleware we r calling async inside a func
   try {
     const restaurantList = await axios({
       method: "GET",

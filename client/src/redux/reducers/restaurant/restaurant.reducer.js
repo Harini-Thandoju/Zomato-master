@@ -1,5 +1,6 @@
 import { GET_RESTAURANT, GET_SPECIFIC_RESTAURANT } from "./restaurant.type";
 
+//reducers are like switch statements
 const initialState = {
   restaurants: [],
   selectedRestaurant: {},
@@ -7,7 +8,7 @@ const initialState = {
 
 // action = {
 //   type: "GET_RESTAURANT",
-//   payload: [ ...restaurants ]
+//   payload: [ ...restaurants ](array of obj)
 //}
 
 const restaurantReducer = (state = initialState, action) => {

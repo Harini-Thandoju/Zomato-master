@@ -1,0 +1,9 @@
+from payment
+npm i razorpay@2.8.0
+
+to get the dummy card
+razorpay dummy card
+test card and test upi
+
+
+to check transaction go to rozorpay website and check in transactions

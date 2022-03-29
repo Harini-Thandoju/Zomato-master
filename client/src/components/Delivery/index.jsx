@@ -6,75 +6,7 @@ import DeliveryCarousel from "./DeliveryCarousel";
 import RestaurantCard from "../RestaurantCard";
 
 function Delivery() {
-  const [restaurantList, setRestaurantList] = useState([
-    {
-      _id: "123456",
-      image: {
-        images:[
-          {
-            Location:
-            "https://www.pistahouse.in/uploads/1582116112-Red%20velvet%20cake.jpg",
-          },
-        ], 
-      },
-      name:"Red Velvet",
-      cuisine: ["Bakery", "Desserts", "Fast Food"],
-      isPro: false,
-      isOff:true,
-      durationOfDelivery:47,
-      restaurantReviewValue:4.1,
-    },
-    {
-      _id: "123456",
-      image: {
-        images:[
-          {
-            Location:
-            "https://www.pistahouse.in/uploads/1582116112-Red%20velvet%20cake.jpg",
-          },
-        ], 
-      },
-      name:"Red Velvet",
-      cuisine: ["Bakery", "Desserts", "Fast Food"],
-      isPro: false,
-      isOff:true,
-      durationOfDelivery:47,
-      restaurantReviewValue:4.1,
-    },
-    {
-      _id: "123456",
-      image: {
-        images:[
-          {
-            Location:
-            "https://www.pistahouse.in/uploads/1582116112-Red%20velvet%20cake.jpg",
-          },
-        ], 
-      },
-      name:"Red Velvet",
-      cuisine: ["Bakery", "Desserts", "Fast Food"],
-      isPro: false,
-      isOff:true,
-      durationOfDelivery:47,
-      restaurantReviewValue:4.1,
-    },
-    {
-      image: {
-        images:[
-          {
-            Location:
-            "https://www.pistahouse.in/uploads/1582116112-Red%20velvet%20cake.jpg",
-          },
-        ], 
-      },
-      name:"Red Velvet",
-      cuisine: ["Bakery", "Desserts", "Fast Food"],
-      isPro: false,
-      isOff:true,
-      durationOfDelivery:47,
-      restaurantReviewValue:4.1,
-    },
-  ]);
+  const [restaurantList, setRestaurantList] = useState([]);
 
   const reduxState = useSelector((store) => store.restaurant.restaurants);
 

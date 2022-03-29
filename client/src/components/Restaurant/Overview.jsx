@@ -18,41 +18,41 @@ import MapView from "./MapView";
 
 function Overview() {
   const [menuImages, setMenuImages] = useState({ images: [
-    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
-    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
-    "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+    // "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+    // "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
+    // "https://99effect.com/wp-content/uploads/2020/12/Indian-Spice-Menu-Card-Design-Template-1.jpg",
   ] });
   const [reviews, setReviews] = useState([
-{
-  isRestaurantReview: false,
-  createAt:"2020-05-01",
-  fullName: "john Doe",
-  reviewText: "Food was good, but servuce was slow",
-},
-{
-  isRestaurantReview: false,
-  createAt:"2020-05-01",
-  fullName: "john Doe",
-  reviewText: "Food was good, but servuce was slow",
-},
-{
-  isRestaurantReview: false,
-  createAt:"2020-05-01",
-  fullName: "john Doe",
-  reviewText: "Food was good, but servuce was slow",
-},
-{
-  isRestaurantReview: false,
-  createAt:"2020-05-01",
-  fullName: "john Doe",
-  reviewText: "Food was good, but servuce was slow",
-},
-{
-  isRestaurantReview: false,
-  createAt:"2020-05-01",
-  fullName: "john Doe",
-  reviewText: "Food was good, but servuce was slow",
-},
+// {
+//   isRestaurantReview: false,
+//   createAt:"2020-05-01",
+//   fullName: "john Doe",
+//   reviewText: "Food was good, but servuce was slow",
+// },
+// {
+//   isRestaurantReview: false,
+//   createAt:"2020-05-01",
+//   fullName: "john Doe",
+//   reviewText: "Food was good, but servuce was slow",
+// },
+// {
+//   isRestaurantReview: false,
+//   createAt:"2020-05-01",
+//   fullName: "john Doe",
+//   reviewText: "Food was good, but servuce was slow",
+// },
+// {
+//   isRestaurantReview: false,
+//   createAt:"2020-05-01",
+//   fullName: "john Doe",
+//   reviewText: "Food was good, but servuce was slow",
+// },
+// {
+//   isRestaurantReview: false,
+//   createAt:"2020-05-01",
+//   fullName: "john Doe",
+//   reviewText: "Food was good, but servuce was slow",
+// },
   ]);
   const { id } = useParams();
 

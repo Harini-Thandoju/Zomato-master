@@ -5,14 +5,13 @@ COPY ./package.json ./
 RUN npm install
 COPY . .
 
-ENV MONGO_URL=mongodb+srv://AdityaGusain:AdityaGusain@zomato-master.3flxm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-ENV GOOGLE_CLIENT_ID=340910053462-dndhpbkvukd5jg5rsglnu9d7i1son355.apps.googleusercontent.com
-ENV GOOGLE_CLIENT_SECRET=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
-ENV AWS_S3_ACCESS_KEY=AKIAS2KUM2FU4TJUJF7N
-ENV AWS_S3_SECRET_KEY=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
+ENV MONGO_URL= mongodb+srv://HariniThandoju:yin2uFwv8pilCEHg@zomato-master.wca14.mongodb.net/Zomato?retryWrites=true&w=majority
+ENV GOOGLE_CLIENT_ID=914751456229-6qd4h849o0pvum7hoal78eaeuslkhg8q.apps.googleusercontent.com
+ENV GOOGLE_CLIENT_SECRET=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
+ENV AWS_S3_ACCESS_KEY=AKIARCT2EXVNE3YRGUEJ
+ENV AWS_S3_SECRET_KEY=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
 ENV NODE_ENV=production
 ENV PORT=4000
 
-RUN npm run build
-
 CMD ["npm", "run", "start"]
+
